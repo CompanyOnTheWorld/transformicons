@@ -1,0 +1,156 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on https://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" href="stylesheets/github-dark.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>Transformicons</title>
+  <meta name="description" content="Transformicons: Animated icons, symbols and buttons using SVG and CSS. Inspired by the article from Sara Soueidan and the work of Bennett Feely and than maintain by CompanyOnTheWorld©supriyantomaftuh">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Transformicons</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">Transformicons: Animated icons, symbols and buttons using SVG and CSS. Inspired by the article from Sara Soueidan and the work of Bennett Feely and than maintain by CompanyOnTheWorld©supriyantomaftuh</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/CompanyOnTheWorld/transformicons/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/CompanyOnTheWorld/transformicons/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/CompanyOnTheWorld/transformicons" class="code">View Transformicons on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h1>
+<a id="transformicons" class="anchor" href="#transformicons" aria-hidden="true"><span class="octicon octicon-link"></span></a>Transformicons</h1>
+
+<p><a href="https://travis-ci.org/grayghostvisuals/transformicons"><img src="https://travis-ci.org/grayghostvisuals/transformicons.svg?branch=master" alt="Build Status"></a></p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/41114960/github/transformicons/site.png" alt=""></p>
+
+<p><strong>What's a transformicon?</strong></p>
+
+<p>It's an animated symbol/button/icon that morphs using a combination of SVG, CSS and HTML.</p>
+
+<p>We also provide a builder that gives developers the ability to select their preferred Transformicons and output for finer control.</p>
+
+<p><strong>What browsers do you support?</strong></p>
+
+<p>IE10+, Chrome 36+, Safari 6+, Firefox 30+, Opera 22+, iOS 7+, Android 4+, Chrome for Android 38+</p>
+
+<h2></h2>
+
+<h3>
+<a id="documentation" class="anchor" href="#documentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Documentation</h3>
+
+<p>All of our documentation has been written in markdown and can be <a href="http://www.transformicons.com/docs.html">directly viewed on our site</a> or under our <a href="https://github.com/grayghostvisuals/transformicons/tree/master/docs">docs</a> directory of this repo. Feel free to reach out for help in the issue tracker making sure to title your issue as descriptive as possible. Please make sure you've also checked older issues that may relate to your question first before filing in order to avoid bogging down the issue tracker.</p>
+
+<h2></h2>
+
+<h3>
+<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributing</h3>
+
+<p>If you would like to contribute to the Transformicons project, please make sure that anything feature related is isolated to a new branch and titled with the name of the feature being developed.</p>
+
+<p>Local installation is dead simple. We use all local files and directories to run this project. This ensures that you, the developer, need not install anything directly or globally to your system. Also, take note we use libsass for preprocessing all of our Sass code.</p>
+
+<p><strong>Install dependencies</strong></p>
+
+<div class="highlight highlight-source-shell"><pre>$ npm install</pre></div>
+
+<p><strong>Start a server and watch Sass files</strong></p>
+
+<div class="highlight highlight-source-shell"><pre>$ npm start</pre></div>
+
+<p>Since a Sass coding guidelines document has been established by <a href="http://hugogiraudel.com">Hugo</a>, it only seems fitting to abide loosely by it's suggestions. The <a href="http://sass-guidelin.es">http://sass-guidelin.es</a> is what we strive towards as we write Sass and we hope you do the same. Enough said.</p>
+
+<p>You'll find all our working files in the <code>dist</code> directory for Transformicons' JavaScript requirement and related Sass. Any markup for the Transformicons objects will be found in the <code>site/templates/includes/tcons</code> directory. We use assemble to build our markup so make sure you're never editing a file with the <code>.html</code> extension. Assemble files use the <code>.hbs</code> file extension. These are the files you should be editing instead.</p>
+
+<h3>
+<a id="before-filing-a-report" class="anchor" href="#before-filing-a-report" aria-hidden="true"><span class="octicon octicon-link"></span></a>Before Filing a Report</h3>
+
+<ul>
+<li>Make an isolated demo</li>
+<li>List your setup and explain in detail the steps to follow in order to reproduce your bug.</li>
+</ul>
+
+<h3>
+<a id="transformicons-specs" class="anchor" href="#transformicons-specs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Transformicons Specs</h3>
+
+<p>Objects submitted to Transformicons must abide by the following guidelines in order to be accepted into the library…</p>
+
+<ul>
+<li>Fully Tested.</li>
+<li>Proportions must be a maximum of 40px wide and no more than 40px tall.</li>
+<li>Make sense to users and yourself.</li>
+<li>If your Transformicon is truly a <code>button</code> please surround the object in a <code>button</code> tag otherwise use a <code>span</code> or <code>div</code>. See our documentation for examples.</li>
+<li>Provide custom control over color and appearance for traits such as border-radius. This way authors can control the visual aspect to match their design.</li>
+</ul>
+
+<h2></h2>
+
+<h4>
+<a id="noteworthy-mentions" class="anchor" href="#noteworthy-mentions" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Noteworthy Mentions</strong>
+</h4>
+
+<ul>
+<li>Featured resource in <a href="http://tympanus.net/codrops/collective/collective-154">Codrops Collective #154</a>
+</li>
+<li>Daily top 10 feature on <a href="http://www.producthunt.com/posts/transformicons">Product Hunt</a>
+</li>
+<li>Featured Tool in <a href="http://css-weekly.com/issue-151/">CSS Weekly</a>
+</li>
+</ul>
+
+<h2></h2>
+
+<p>Props to <a href="//twitter.com/bennettfeely">@bennettfeely</a> and <a href="//twitter.com/SaraSoueidan">@SaraSoueidan</a>.
+Licensed under <a href="//opensource.org/licenses/MIT">MIT</a></p>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/CompanyOnTheWorld" class="avatar"><img src="https://avatars0.githubusercontent.com/u/13640522?v=3&amp;s=60" width="48" height="48"></a> <a href="https://github.com/CompanyOnTheWorld">CompanyOnTheWorld</a> maintains <a href="https://github.com/CompanyOnTheWorld/transformicons">Transformicons</a></p>
+
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/CompanyOnTheWorld/transformicons/tarball/master" class="tar">tar</a><a href="https://github.com/CompanyOnTheWorld/transformicons/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("supriyantomaftuh");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+</body>
+</html>
